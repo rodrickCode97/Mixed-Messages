@@ -1,31 +1,27 @@
 // creating an mixed message program that displays the your future day 
 
-console.log("Please enter the day of the week to know what you should attempt, do and avoid.");
-// getting user's input 
-const getUserInput = userInput =>{
+// Message prompting the user to write a message.
+// console.log('Please enter the day of the week to know what you should attempt, do and avoid.')
+
+// function to get user's input 
+function getUserInput(userInput) {
     userInput = userInput.toLowerCase();
-switch(userInput){
-    case monday:
-        return 'monday';
-    case tuesday:
-        return 'tuesday';
-    case wednesday:
-        return 'wednesday';
-    case thursday:
-        return 'thursday';
-    case friday:
-        return 'friday';
-    case saturday:
-        return 'saturday';
-    case sunday:
-        return 'sunday';
-}
-}
-
-// arrays of future days of the week 
-
-const futureDays = () => {
-le
+    switch (userInput) {
+        case monday:
+            return 'monday';
+        case tuesday:
+            return 'tuesday';
+        case wednesday:
+            return 'wednesday';
+        case thursday:
+            return 'thursday';
+        case friday:
+            return 'friday';
+        case saturday:
+            return 'saturday';
+        case sunday:
+            return 'sunday';
+    }
 }
 
 //  array's for sayings 
@@ -47,15 +43,22 @@ saying3[0] = "your family";
 saying3[1] = "your friends";
 saying3[2] = "video games"
 saying3[3] = "dogs";
+// set variables to output random elements of the 3 arrays 
 
-arr[i] * Math.random(Math.floor * 4);
+let randomSaying1 = saying1[Math.floor(Math.random()*4)];
+let randomSaying2 = saying2[Math.floor(Math.random()*4)];
+let randomSaying3 = saying3[Math.floor(Math.random()*4)];
 
-// set up a function with a conditional statement for the input and the output 
+// set up a function that will output the future message
+const mixedM = getUserInput =>{
+console.log("You've chose " + getUserInput);
+ if(getUserInput){
+console.log(`On ${getUserInput} you should avoid ${randomSaying1}`);
+console.log(`You should stay away from ${randomSaying2}`);
+console.log(`also You should stay around ${randomSaying3}`);
+ } else {
+    console.log('Error');
+ }
+};
 
-const mixedM = (UserInput, arr) => {
-    for(let i = 0; i < arr.length; i++)
-    if(userInput === arr[i]){
-
-    }
-    
-} 
+mixedM(getUserInput);
