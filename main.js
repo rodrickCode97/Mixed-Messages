@@ -21,9 +21,7 @@ let randomSaying3 = saying3[Math.floor(Math.random()*4)];
 const mixedM = () => {
 console.log("You've chose " + date + "!");
  if(date){
-console.log(`On ${date} you should avoid ${randomSaying1}`);
-console.log(`You should stay away from ${randomSaying2}`);
-console.log(` and also You should stay around ${randomSaying3}`);
+console.log(`On ${date} you should avoid ${randomSaying1} You should stay away from ${randomSaying2} and also, you should stay around ${randomSaying3}`);
  } else {
     console.log('Error');
  }
